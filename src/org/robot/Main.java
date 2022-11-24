@@ -45,7 +45,7 @@ public class Main {
 		IProcessor processor = null;
 		IWriter writer = null;
 		
-		LOGGER.info("Obtem arquivos do diretório indicado");
+		LOGGER.info("Obtem arquivos do diretório origem");
 		reader = AppFactory.getReaderInstance(properties);		
 		final List<Archive> files = reader.getFiles(basePath);
 		for(Archive fileOrigin : files){
